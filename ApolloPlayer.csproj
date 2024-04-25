@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\about_window.jpg" />
+    <None Remove="Assets\apolloplayer_logo.png" />
+    <None Remove="Assets\apolloplayer_logo_bw.png" />
+    <None Remove="Assets\green.gif" />
+    <None Remove="Assets\main_window_design.png" />
+    <None Remove="Assets\visitor1.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Music\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\about_window.jpg" />
+    <Resource Include="Assets\apolloplayer_logo.png" />
+    <Resource Include="Assets\apolloplayer_logo_bw.png" />
+    <Resource Include="Assets\green.gif" />
+    <Resource Include="Assets\main_window_design.png" />
+    <Resource Include="Assets\visitor1.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

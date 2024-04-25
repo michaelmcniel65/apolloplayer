@@ -1,0 +1,25 @@
+﻿<Window x:Class="ApolloPlayer.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApolloPlayer"
+        mc:Ignorable="d"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        WindowStyle="None"
+        Title="About" Height="250" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/Assets/about_window.jpg" Stretch="Fill"/>
+    </Window.Background>
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="140" Margin="35,38,0,0" VerticalAlignment="Top" Width="140" Source="/Assets/apolloplayer_logo.png"/>
+        <Label Content="Apollo Player" HorizontalAlignment="Left" Margin="195,50,0,0" VerticalAlignment="Top" Height="55" Width="290" Foreground="#FF079F08" FontFamily="{StaticResource Visitor}" FontSize="36"/>
+        <Label Content="Version: 1.1.07" HorizontalAlignment="Left" Margin="195,78,0,0" VerticalAlignment="Top" Height="54" Width="136" Foreground="#FF079F08" FontFamily="{StaticResource Visitor}" FontSize="18"/>
+        <Label Content="12 April 2024 - Created by: Michael McNiel" HorizontalAlignment="Left" Margin="195,118,0,0" VerticalAlignment="Top" Height="27" Width="308" Foreground="#FF079F08" FontFamily="Bahnschrift" FontSize="16"/>
+        <Label Content="github.com/michaelmcniel65" HorizontalAlignment="Left" Margin="226,145,0,0" VerticalAlignment="Top" Height="27" Width="217" Foreground="#FF079F08" FontFamily="Bahnschrift" FontSize="16"/>
+        <Label Content="&#59599;" HorizontalAlignment="Left" Margin="195,145,0,0" VerticalAlignment="Top" Height="27" Width="26" Foreground="#FF079F08" FontFamily="Segoe MDL2 Assets" FontSize="16"/>
+        <Label Content="michaelcmcniel@gmail.com" HorizontalAlignment="Left" Margin="226,172,0,0" VerticalAlignment="Top" Height="27" Width="217" Foreground="#FF079F08" FontFamily="Bahnschrift" FontSize="16"/>
+        <Label Content="&#59157;" HorizontalAlignment="Left" Margin="195,172,0,0" VerticalAlignment="Top" Height="27" Width="26" Foreground="#FF079F08" FontFamily="Segoe MDL2 Assets" FontSize="16"/>
+        <Button x:Name="btnClose" Content="Close" BorderBrush="#FF202126" Background="Black" Foreground="#FF00DF00" FontFamily="Visitor TT1 BRK" FontSize="16" Click="btnClose_Click" Margin="495,196,30,24"/>
+    </Grid>
+</Window>
