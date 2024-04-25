@@ -1,10 +1,20 @@
-#Apollo Player v1.1.07
+<h1>Apollo Player v1.1.07</h1>
 
 Last Updated: 12 April 2024 9:32 PM CST
 
 Any questions or bug reports should be emailed to michaelcmcniel@gmail.com
 
 Thank you!
+
+![apollo_player](https://github.com/michaelmcniel65/apolloplayer/assets/100385832/af85e666-cd56-4846-a1bb-0dc8b46e57bc)
+
+<h2>Demo Video</h2>
+https://www.youtube.com/watch?v=Cyf2IESyITs
+
+<h2>About</h2>
+Apollo Player is a music player written in C# using NAudio, a .NET audio library from Mark Heath (https://github.com/naudio/NAudio) in WPF.
+
+The entire program is written in C# using 900 lines of code. It averages 150 MB of memory usage when playing a song. I did my absolute best to keep as much memory cleared as possible and use good rules of thumb when it comes to creating a WPF application. The goal was to create a music player that did not depend on the included Windows Media Player library in order to challenge myself and make something that I could potentially port over to Linux. The real grind was making NAudio work with WPF as it was initially made for WinForms. Luckily, NAudio proved to work extremely well and I'm able to deliver one of my coolest projects to date.
 
 CHANGE LOG
 ----------
